@@ -1,0 +1,167 @@
+<!doctype html>
+ <html lang="en">
+     <head>
+    <meta charset="utf-8">
+    </head>
+  <body background=images/indexpage/krustykrap.jpg>
+   <body>
+<img src="images/title.jpg" height="100" alt="image of home page text"> 
+<img src="images/avatar.jpg" height="600" alt="the avatar I made that resembles myself"> 
+<h2>What does this button do?</h2>
+<p id="demo">Press the button to find out.</p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello!"'>Click me for a cool message!</button>
+<img src="images/music.jpg" height="30" alt="music directions"> 
+    <h1><style>
+h1 {
+    color: midnightblue;
+    font-family: "comic sans ms", cursive, sans-serif;
+    font-size: 400%;
+    text-align: center;
+    text-decoration: underline;
+    line-height: 0.0011;
+
+}</style></h1>
+</body>
+<head>
+<audio id="myAudio">
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+<button onclick="playAudio()" type="button.1"><img src="images/play.jpg" alt="play button" height="50"></button>
+<button onclick="pauseAudio()" type="button.2"><img src="images/pause.jpg" alt="pause button" height="50"></button> 
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+
+function pauseAudio() { 
+    x.pause(); 
+}
+</script>
+</head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-color: #ffffff
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+</head>
+<head>
+  <style>
+  body {
+    background-color: #ffffff;
+    color: midnightblue;
+    text-align: center;
+    font-family:"comic sans ms", cursive, sans-serif;
+    font-size: 20px;
+}</style>
+</head>
+          <style> 
+h5 {
+    position: absolute;
+    left:1025px;
+    top: -10px;
+    color: midnightblue;
+    text-align: justify;
+    text-align: center;
+    font-family:"comic sans ms", cursive, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+}</style>
+        <p id="demo"></p></h5>
+</head>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="resume.html">Resume</a>
+  <a href="tipsandtricks.html">Tips & Tricks</a>
+</div>
+
+<div id="main">
+  <h9><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open<style> 
+h9 {
+    position: fixed;
+    left:5px;
+    top: -5px;
+    }</style></span></h9>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+</body>
+</html>
